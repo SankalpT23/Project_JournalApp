@@ -7,6 +7,23 @@ spring:
     host: ${REDIS_HOST}
     port: ${REDIS_PORT}
     password: ${REDIS_PASSWORD}
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL_USERNAME} # Env Var needed
+    password: ${EMAIL_PASSWORD} # Env Var needed
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 server:
   port: 8080
+  servlet:
+    context-path: /journal
+
+weather:
+  api:
+    key: ${WEATHER_API_KEY} # Env Var needed

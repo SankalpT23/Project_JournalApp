@@ -2,6 +2,7 @@ spring:
   data:
     mongodb:
       uri: ${MONGO_URI}
+      database: journaldb
       auto-index-creation: true
   redis:
     host: ${REDIS_HOST}

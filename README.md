@@ -61,32 +61,4 @@ JournalApp_Final/
     - Click "Create".
 3.  **Verify Data**: The entry should appear on the dashboard with the correct sentiment tag.
 
-## Deployment to GitHub
 
-1.  **Initialize Git** (if not done):
-    ```bash
-    git init
-    ```
-2.  **Create a .gitignore**:
-    Ensure you ignore build artifacts and secrets. Create a `.gitignore` in the root if one doesn't exist, or rely on the ones in `Backend/` and `Frontend/`.
-    *Recommended Root `.gitignore` content:*
-    ```
-    node_modules/
-    target/
-    .env
-    .idea/
-    .vscode/
-    *.class
-    ```
-3.  **Stage and Commit**:
-    ```bash
-    git add .
-    git commit -m "Initial commit of JournalApp"
-    ```
-4.  **Push to Repository**:
-    *Create a new repository on GitHub (do not add README/license yet).*
-    ```bash
-    git branch -M main
-    git remote add origin https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
-    git push -u origin main
-    ```
